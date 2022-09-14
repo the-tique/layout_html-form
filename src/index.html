@@ -13,7 +13,7 @@
   <body>
     <form action="/action_page.php" method="post">
       <fieldset>
-        <legend>Personal_Information</legend>
+        <legend>Personal Information</legend>
 
         <label for="surname">Surname:
           <input
@@ -68,12 +68,94 @@
           <input
             type="password"
             name="password"
-            id="Password">
+            id="Password"
+            minlength="8"
+            maxlength="32">
         </label>
 
       </fieldset>
 
-      
+      <fieldset>
+        <legend>An interesting fact about you!</legend>
+
+        <div class="cats">
+        Do you love cats?
+          <label for="yes">
+            <input
+              type="radio"
+              name="cats"
+              id="yes"> Yes
+          </label>
+
+          <label for="no">
+            <input
+              type="radio"
+              name="cats"
+              id="no"> No
+          </label>
+        </div>
+
+        <label for="Color">What is your favourite color?
+          <input
+            type="color"
+            name="color"
+            id="Color">
+        </label><br>
+
+        <label for="sleepTime">What time do you go to bed?
+          <input
+            type="time"
+            name="time"
+            id="sleepTime">
+        </label><br>
+
+        <label for="Car">What are your favorite brand of car?
+          <select
+            name="car"
+            id="Car"
+            multiple>
+            <option value="BMW">BMW</option>
+            <option value="AUDI">AUDI</option>
+            <option value="Lada">Lada</option>
+          </select>
+        </label><br>
+
+        <label for="Rate">How do you rate our work?
+          <input
+            type="range"
+            name="rate"
+            id="Rate"
+            min="1"
+            max="10"
+            value="0">
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Additional info:</legend>
+
+        <label for="Comments">Comments:
+          <textarea
+            name="comments"
+            id="Comments"
+            cols="20"
+            rows="2">
+          </textarea>
+        </label><br>
+
+        <label for="Recommend"> Whould you recommend us?
+          <select
+            name="recommend"
+            id="Recommend">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+        </label>
+      </fieldset>
+
+      <label>
+        <input type="submit" value="submit">
+      </label>
     </form>
     <script type="text/javascript" src="./main.js"></script>
   </body>
