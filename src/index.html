@@ -11,7 +11,70 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
+    <form action="/action_page.php" method="post">
+      <fieldset>
+        <legend>Personal_Information</legend>
+
+        <label for="surname">Surname:
+          <input
+            type="text"
+            name="Surname"
+            id="surname">
+        </label> <br>
+
+        <label for="name">Name:
+          <input
+            type="text"
+            name="Name"
+            id="name">
+        </label><br>
+
+        <label for="Age">How old are You?
+          <input
+            type="number"
+            name="age"
+            id="Age"
+            value="12"
+            min="1"
+            max="100">
+        </label><br>
+
+        <label for="BirthDate">Full date of birth:
+          <input
+            type="date"
+            name="birthDate"
+            id="BirthDate">
+        </label><br>
+
+        <label for="agreement">I accept the term of agreement
+          <input
+            type="checkbox" id="agreement">
+        </label>
+
+      </fieldset>
+
+      <fieldset>
+        <legend>Registration</legend>
+
+        <label for="Email">E:mail:
+          <input
+            type="email"
+            id="Email"
+            placeholder="email@example.com"
+          >
+        </label><br>
+
+        <label for="Password">Password:
+          <input
+            type="password"
+            name="password"
+            id="Password">
+        </label>
+
+      </fieldset>
+
+      
+    </form>
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
