@@ -11,22 +11,29 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <form action="/action_page.php" method="post">
-      <fieldset>
+    <form
+      class="container"
+      action="/action_page.php"
+      method="post">
+
+      <fieldset class="fieldset">
         <legend>Personal Information</legend>
 
         <label for="surname">Surname:
           <input
             type="text"
             name="Surname"
-            id="surname">
+            id="surname"
+            autocomplete="off"
+            >
         </label> <br>
 
         <label for="name">Name:
           <input
             type="text"
             name="Name"
-            id="name">
+            id="name"
+            autocomplete="off">
         </label><br>
 
         <label for="Age">How old are You?
@@ -48,12 +55,13 @@
 
         <label for="agreement">I accept the term of agreement
           <input
-            type="checkbox" id="agreement">
+            type="checkbox"
+            id="agreement">
         </label>
 
       </fieldset>
 
-      <fieldset>
+      <fieldset class="fieldset">
         <legend>Registration</legend>
 
         <label for="Email">E:mail:
@@ -75,7 +83,7 @@
 
       </fieldset>
 
-      <fieldset>
+      <fieldset class="fieldset">
         <legend>An interesting fact about you!</legend>
 
         <div class="cats">
@@ -131,7 +139,7 @@
         </label>
       </fieldset>
 
-      <fieldset>
+      <fieldset class="fieldset">
         <legend>Additional info:</legend>
 
         <label for="Comments">Comments:
