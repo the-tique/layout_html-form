@@ -1,7 +1,11 @@
-.container :not(:last-child) {
+.fieldset {
   margin-bottom: 20px;
 }
 
-.fieldset :not(:last-child) {
+input {
+  margin-bottom: 10px;
+}
+
+select {
   margin-bottom: 10px;
 }
