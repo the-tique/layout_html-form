@@ -12,15 +12,14 @@
   </head>
   <body>
     <form
-      action="/action_page.php"
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
       method="post">
 
       <fieldset class="fieldset">
         <legend>Personal information</legend>
 
-        <label
-          for="surname"
-          class="label">Surname:
+        <label for="surname" class="label">
+          Surname:
           <input
             type="text"
             name="Surname"
@@ -29,10 +28,9 @@
           >
         </label>
 
-        <label
-          for="name"
-          class="label"
-        > Name:
+        <label for="name" class="label"
+        >
+        Name:
           <input
             type="text"
             name="Name"
@@ -41,10 +39,9 @@
           >
         </label>
 
-        <label
-          for="Age"
-          class="label"
-        > How old are You?
+        <label for="Age" class="label"
+        >
+        How old are You?
           <input
             type="number"
             name="age"
@@ -54,22 +51,19 @@
             max="100"
           >
         </label>
-        <label
-          for="BirthDate"
-          class="label"
-        > Full date of birth:
+        <label for="BirthDate" class="label"
+        >
+        Full date of birth:
           <input
             type="date"
             name="birthDate"
             id="BirthDate"
           >
         </label>
-        <label
-          for="agreement"
-        > I accept the term of the agreement
-          <input
-            type="checkbox"
-            id="agreement"
+        <label for="agreement"
+        >
+        I accept the term of the agreement
+          <input type="checkbox" id="agreement"
           >
         </label>
 
@@ -78,19 +72,18 @@
       <fieldset class="fieldset">
         <legend>Registration</legend>
 
-        <label
-          for="Email"
-          class="label"
-        > E-mail:
+        <label for="Email" class="label"
+        >
+        E-mail:
           <input
             type="email"
             id="Email"
             placeholder="email@example.com"
           >
         </label>
-        <label
-          for="Password"
-        > Password:
+        <label for="Password"
+        >
+        Password:
           <input
             type="password"
             name="password"
@@ -104,10 +97,9 @@
 
       <fieldset class="fieldset">
         <legend>An interesting fact about you!</legend>
-        <label
-          for="cats"
-          class="label"
-        > Do you love cats?
+        <label for="cats" class="label"
+        >
+        Do you love cats?
           <input
             type="radio"
             value="yes"
@@ -117,32 +109,30 @@
             type="radio"
             value="No"
             name="cats"
-          > No
+          >
+          No
         </label>
-        <label
-          for="Color"
-          class="label"
-        > What is your favourite color?
+        <label for="Color" class="label"
+        >
+        What is your favourite color?
           <input
             type="color"
             name="color"
             id="Color"
           >
         </label>
-        <label
-          for="sleepTime"
-          class="label"
-        > What time do you go to bed?
+        <label for="sleepTime" class="label"
+        >
+        What time do you go to bed?
           <input
             type="time"
             name="time"
             id="sleepTime"
           >
         </label>
-        <label
-          for="Car"
-          class="label"
-        > What are your favorite brand of car?
+        <label for="Car" class="label"
+        >
+        What are your favorite brand of car?
           <select
             name="car"
             id="Car"
@@ -152,9 +142,9 @@
             <option value="Lada">Lada</option>
           </select>
         </label>
-        <label
-          for="Rate"
-        > How do you rate our work?
+        <label for="Rate"
+        >
+        How do you rate our work?
           <input
             type="range"
             name="rate"
@@ -169,19 +159,19 @@
       <fieldset class="fieldset">
         <legend>Additional info:</legend>
 
-        <label
-          for="Comments"
-          class="label"
-        >Comments:
+        <label for="Comments" class="label"
+        >
+        Comments:
           <textarea
             name="comments"
             id="Comments"
             cols="20"
-            rows="2">
-          </textarea>
+            rows="2"
+         ></textarea>
         </label>
 
-        <label for="Recommend"> Would you recommend us?
+        <label for="Recommend">
+          Would you recommend us?
           <select
             name="recommend"
             id="Recommend">
